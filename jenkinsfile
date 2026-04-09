@@ -32,7 +32,6 @@ pipeline {
                     if (userChoice == 'Yes') {
                         sh '''
                         echo "Deploying application..."
-                        java -jar java-sample-21-1.0.0.jar
                         '''
                     } else {
                         error("Deployment aborted by user")
