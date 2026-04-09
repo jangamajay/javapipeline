@@ -31,8 +31,6 @@ pipeline {
 
                     if (userChoice == 'Yes') {
                         sh '''
-                        cd javaapp-pipeline
-                        cd target
                         echo "Deploying application..."
                         java -jar java-sample-21-1.0.0.jar
                         '''
